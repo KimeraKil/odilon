@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Peças e Produtos</title>
+</head>
+
+<body>
+    <div id="backLoad" class="some">
+        <div class="loader">
+            <div class="inner one"></div>
+            <div class="inner two"></div>
+            <div class="inner three"></div>
+        </div>
+    </div>
+    <div class="hdr">
+        <header>
+            <img src="./img/Mecanica.png">
+            <h1>Auto Eletrica Odilon</h1>
+        </header>
+        <div class="menu">
+            <span>
+                <button onclick="clientes()"><img src="./img/Clientes.png"></button>
+            </span>
+            <span>
+                <button onclick="os()"><img src="./img/OS.png"></button>
+            </span>
+            <span>
+                <button onclick="parts()"><img src="./img/Peças.png"></button>
+            </span>
+            <span id="opts">
+                <button onclick="configs()">
+                    <img src="./img/Config.png">
+                    <span>Opções</span>
+                </button>
+            </span>
+            <span id="user">
+                <img src="./img/Usuario.png">
+                <span>Rodrigo</span>
+            </span>
+        </div>
+        <div class="busca">
+            <input type="text" placeholder="Placa / Contato / Nome" id="txtSearch">
+            <button onclick="searchGeneral()">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+            </button>
+            <button onclick="openNewPart()">
+                <span class="material-symbols-outlined">
+                    box_add
+                </span>
+            </button>
+        </div>
+    </div>
+    <div class="box">
+        <h1>Peças e Produtos</h1>
+        <div class="legend">
+            <ul>
+                <li>ID</li>
+                <li>Produto</li>
+                <li>Qtde</li>
+                <li>Valor</li>
+            </ul>
+        </div>
+        <div class="produtos">
+            <ul>
+                <li onclick="openInfo()">
+                    <span>1258</span>
+                    <span>Placa diodo longos escortepp</span>
+                    <span>1800</span>
+                    <span>R$ 1.000,00</span>
+                </li>
+                <li>
+                    <span>1258</span>
+                    <span>Nome do Produto 2</span>
+                    <span>1800</span>
+                    <span>R$ 1.000,00</span>
+                </li>
+                <li>
+                    <span>1258</span>
+                    <span>Nome do Produto 3</span>
+                    <span>1800</span>
+                    <span>R$ 1.000,00</span>
+                </li>
+                <li>
+                    <span>1258</span>
+                    <span>Nome do Produto 4</span>
+                    <span>1800</span>
+                    <span>R$ 10.000,00</span>
+                </li>
+                <li>
+                    <span>1258</span>
+                    <span>Nome do Produto 4</span>
+                    <span>1800</span>
+                    <span>R$ 1.000,00</span>
+                </li>
+                <li>
+                    <span>1258</span>
+                    <span>Nome do Produto 4</span>
+                    <span>1800</span>
+                    <span>R$ 1.000,00</span>
+                </li>
+                <li>
+                    <span>1258</span>
+                    <span>Nome do Produto 4</span>
+                    <span>1800</span>
+                    <span>R$ 1.000,00</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="moreInfo some">
+        <label for="produto">Produto / Item:
+            <input type="text" id="produto"
+                placeholder="Produto Bendix Impulsor Partida Golf Fox Gol G5 Gv G4 Polo Bzm1534">
+        </label>
+        <div class="rows">
+            <label for="qtde">
+                Quantidade:
+                <input type="text" id="qtde" placeholder="Qtde">
+            </label>
+            <label for="valorItem">Valor:
+                <input type="text" id="valorItem" placeholder="Valor">
+            </label>
+        </div>
+        <label for="marcaPro">Marca do Produto:
+            <input type="text" id="marcaPro" placeholder="Marca do Item BZM">
+        </label>
+        <label for="marcaAuto">Marca do Veículo:
+            <input type="text" id="marcaAuto" placeholder="Marca do Veículo">
+        </label>
+        <label for="modelo">Modelo:
+            <input type="text" id="modelo" placeholder="Modelo">
+        </label>
+        <label for="ano">Ano:
+            <input type="text" id="ano" placeholder="Ano">
+        </label>
+        <label for="aplications">Aplicações:
+            <textarea name="" id="aplications" cols="30" rows="10" maxlength="250"
+                placeholder="Aplicações: "></textarea>
+        </label>
+        <button onclick="closeInfo()">Close</button>
+    </div>
+    <footer>
+        <p>Desenvolvido por: <b>Aderaldo Anderson S.V Amorim</b></p>
+    </footer>
+    <script src=" https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./js/kim.js"></script>
+</body>
+
+</html>

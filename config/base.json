@@ -1,0 +1,31 @@
+{
+    "cliente":
+        {
+        "id": [
+            "nome",
+            "apelido",
+            "contato",
+            "recado"
+        ],
+        "placeholder": [
+            "Nome",
+            "Apelido",
+            "Contato",
+            "Recado"
+        ]
+    },
+
+    "veiculo":
+    {
+        "id": [
+            "veiculo",
+            "placa",
+            "cliente"
+        ],
+        "placeholder": [
+            "Veículo",
+            "Placa",
+            "Cliente"
+        ]
+    }
+}
